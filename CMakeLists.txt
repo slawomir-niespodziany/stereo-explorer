@@ -3,9 +3,9 @@ cmake_minimum_required(VERSION 3.22)
 # Explorer
 project (stereo-explorer VERSION 0.1 DESCRIPTION "Stereo disparity explorer application.")
 
-file(GLOB SRC_FILES "*.cpp")
+file(GLOB SRC_FILES "src/*.cpp")
 add_executable(stereo-explorer ${SRC_FILES})
-include_directories(stereo-explorer PUBLIC ".")
+include_directories(stereo-explorer PUBLIC "incl")
 target_link_libraries(stereo-explorer imgui png)
 
 # ImGui
